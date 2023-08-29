@@ -5,13 +5,10 @@ function ProjectList({ projects }) {
   console.log(projects);
   return (
     <div id="projects">
-      <h2>My Projects</h2>
-      <div id="project-list">
-        {projects.map((project)=>
-        {
-          <ProjectItem key ={project.id} project={project} /> 
-        })}
-      </div>
+      <h2>My Projects</h2>    
+        {projects.map(project => (
+         <ProjectItem key={project.id} project={projects} technologies={project.technologies}/>//I have mapped over the `projects` array and passed each project to the ProjectItem component
+        ))}
     </div>
   );
 }

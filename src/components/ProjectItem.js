@@ -6,9 +6,9 @@ function ProjectItem({ name, about, technologies }) {
       <h3>{name}</h3>
       <p>{about}</p>
       <div className="technologies">
-        {/* render a <span> for each technology in the technologies array */}
-        {technologies.map((tech, index) => (
-          <span key={index}>{tech}</span>
+        
+        {technologies.map((techno, index) => (
+          <span key={index}>{techno}</span>
         ))}
       </div>
     </div>
@@ -16,3 +16,4 @@ function ProjectItem({ name, about, technologies }) {
 }
 
 export default ProjectItem;
+;
